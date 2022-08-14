@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+
+    <!-- link external css file -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <!-- navbar section begin -->
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+    <!-- navbar section end -->
+    
+    <!-- main section start -->
+    <main class="main">
+        <!-- home section begin -->
+        <section class="home" id="home">
+            <div class="my-photo-div">
+                <img src="images/person.png" alt="not found"/>
+            </div>
+            <div>
+                <h3><b>Savankumar Ratnaji Chauhan</b></h3>
+                <h4>Computer Engineer</h4>
+            </div>
+            <div class="home-btn">
+                <a class="resume-btn" href="images/resume.pdf" download>Resume</a>
+                <a class="contact-btn" href="#contact"> Contact Me</a>
+            </div>
+        </section>
+        <!-- home section end -->
+
+        <hr>
+
+        <!-- about-me section begin -->
+        <section class="about"  id="about">
+            <div class="about-me">
+                <h3>About Me and Academic</h3>
+                <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students. 
+
+                </p>
+                <p><b>Date:</b> 10 Aug 2022.</p>
+            </div>
+            <div class="basic-info">
+                <h3>Basic Information</h3>
+                <div>
+                    <div class="que">
+                        <b>NAME:</b>
+                        <b>AGE:</b>
+                        <b>EMAIL:</b>
+                        <b>LANGUAGE:</b>
+                        <b>CLASS SECTION:</b>
+                        <b>STUDENT ID:</b>
+                        <b>INSTRUCTOR:</b>
+                    </div>
+                    <div class="ans">
+                        <span>Savan Chauhan</span>
+                        <span>19</span>
+                        <span>srchauhan2@myseneca.ca</span>
+                        <span>Gujarati, Hindi, English</span>
+                        <span>WEB222 NHH</span>
+                        <span>134823210</span>
+                        <span>Siyavash Ghassemi Nia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-me section end -->
+
+        <hr>
+
+        <!-- education section begin -->
+        <section class="education" id="education">
+            <h1>Education</h1>
+            <div class="edu-card">
+                <div class="edu-head">
+                    <p>10<sup>th</sup><br><h2>Secondary Education</h2></p>
+                </div>
+                <div class="edu-data">
+                    <h2>Secondary Education</h2>
+                    <h3>V.K Vaghela High school </h3>
+                    <p>
+                        Awarded With First Class with Distinction
+                    </p>
+                </div>
+            </div>
+            <div class="edu-card">
+                <div class="edu-head">
+                    <p>12<sup>th</sup><br><h2>Higher Secondary Education</h2></p>
+                </div>
+                <div class="edu-data">
+                    <h2>Secondary Education</h2>
+                    <h3>Adarsh High school</h3>
+                    <small>(With special subject Mathematics)</small>
+                    <p>
+                        Awarded With First Class with Distinction
+                    </p>
+                </div>
+            </div>
+            <div class="edu-card">
+                <div class="edu-head">
+                    <p>September 2020<br><h2>Bachelor's Degree</h2></p>
+                </div>
+                <div class="edu-data">
+                    <h2>Bachelor's Degree</h2>
+                    <h3>Government Science College, Gujarat University</h3>
+                    <small>(With special subject Mathematics)</small>
+                    <p>
+                        Awarded With First Class with Distinction
+                    </p>
+                </div>
+            </div>
+            <div class="edu-card">
+                <div class="edu-head">
+                    <p>January 2022<br><h2>Computer Programming and Analysis </h2></p>
+                </div>
+                <div class="edu-data">
+                    <h2>Computer Programming and Analysis</h2>
+                    <h3>Seneca college, Canada</h3>
+                    <small>(Current Status)</small>
+                    <p>This is my current running Course.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- education section end -->
+
+        <hr>
+
+        <!-- contact section begin -->
+        <section class="contact" id="contact">
+            <h1>CONTACT ME</h1>
+            <form class="form-contact" action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name" name="name" class="contact-field" required>
+                <br>
+
+                <label for="mail">Email:</label>
+                <br>
+                <input type="email" id="mail" name="mail" class="contact-field" required>
+                <br>
+
+                <label for="address">Address:</label>
+                <br>
+                <input type="text" id="address" name="address" class="contact-field" required>
+                <br>
+
+                <label for="city">City:</label>
+                <br>
+                <input list="cities" id="city" name="city" class="contact-field" required>
+                <datalist id="cities">
+                    <option value="Toronto" >
+                    <option value="Montreal">
+                    <option value="Calgary">
+                    <option value="Vancouver">
+                </datalist>
+                <br>
+
+                <label for="pin">Postal Code:</label>
+                <br>
+                <input type="text" id="pin" name="pin" class="contact-field" required>
+                <br>
+
+                <label for="topic">What this is about :</label>
+                <div class="radio-group">
+                    <input type="radio" name="topic" id="hiring" value="hiring">Hiring<br>
+                    <input type="radio" name="topic" id="comment" value="comment">Comment<br>
+                    <input type="radio" name="topic" id="question" value="question">Question<br>
+                </div>
+                <br>
+
+                <div class="hide-field">
+                    <label for="rate">Hourly Rate:</label>
+                    <input type="text" name="rate" id="rate" class="contact-field"/>
+                </div>
+
+                <label for="txt-msg">Text Message :</label>
+                <br>
+                <textarea  rows="3" class="contact-field"></textarea>
+                <label for="number">Phone Number:</label>
+                <br>
+                <input type="number" id="pno" name="pno" class="contact-field" required>
+                <br>
+                <center>                
+                    <input type="submit" value="submit" class="contact-submit"/>
+                </center>
+               
+            </form>
+        </section>
+        <!-- contact section end -->
+
+    </main>
+    <!-- main section end -->
+
+    <!-- import external script file -->
+    <script src="main.js"></script>
+</body>
+</html>

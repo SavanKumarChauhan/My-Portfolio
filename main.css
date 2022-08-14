@@ -1,0 +1,298 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    background-color: rgb(248, 241, 241);
+}
+section{
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+button{
+    cursor: pointer;
+}
+hr{
+    margin-top: 50px;
+}
+.navbar{
+    background-color: rgb(227, 179, 179);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-left:20px ;
+    gap: 50px;
+}
+.navbar a{
+    gap:400px;
+    text-decoration: none;
+    color: black;
+}
+main{
+    margin-top: 40px;
+    width: 1024px;
+    margin: auto;
+}
+.home{
+    text-align: center;
+    width:100%;
+    height:700px;
+    background-color: rgb(101, 219, 255);
+    margin: auto;
+    padding-top: 70px;
+}
+.my-photo-div{
+    padding-top: 50px;
+    width:25%;
+    height: 40%;
+    margin: auto;
+}
+.home .my-photo-div img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.home-btn{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    width: 50%;
+    margin: auto;
+}
+.resume-btn{
+    width: 35%;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 15px 20px;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+.contact-btn{
+    width: 35%;
+    text-decoration: none;
+    border-radius:30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 20px;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+.about{
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 6px 30px black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 0px 30px 0px;
+    margin:100px 0px;
+}
+.about-me{
+    width:55%;
+    padding: 10px 50px;
+}
+.basic-info{
+    width:45%;
+}
+.basic-info div{
+    width:100%;
+    display: flex;
+}
+.basic-info div div {
+    width:50%;
+    flex-direction: column;
+}
+
+.basic-info div div b{
+    padding-top: 10px;
+}
+.basic-info div div span{
+    padding-top: 10px;
+}
+
+
+.education{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.education .edu-card{
+    margin: 20px 0px;
+    background-color: rgb(95, 66, 211);
+    box-shadow: 0px 0px 10px black;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.education .edu-card .edu-head{
+    color: white;
+    width: 30%;
+    margin: auto;
+}
+.education .edu-card .edu-data{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 70%;
+    text-align: left;
+    padding:4% 0% 4% 5%;
+}
+.edu-data h2{
+    font-size: 22px;
+}
+.edu-data h3{
+    font-size: 18px;
+}
+.education .edu-card .edu-data h3,h2,h4{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.contact{
+    
+    background-color: rgb(233, 228, 252);
+    box-shadow: 0px 4px 10px rgb(49, 49, 70);
+    height: fit-content;
+    padding: 40px 100px;
+}
+.contact .form-contact{
+    width: 100%;
+}
+.contact .form-contact .contact-field{
+    width: 100%;
+    margin: 5px 0px 10px 0px;
+}
+.heide-field{
+    display: none;
+}
+.contact-submit{
+    text-decoration: none;
+    border-radius:30px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:1024px){
+    .navbar{
+        padding-left: 10px;
+        width: 100vw;
+        gap:20px;
+    }
+    body{
+        width:100vw;
+    }
+    main{
+        width: 100%;
+    }
+    .home{
+        width:100% ;
+    }
+    .my-photo-div{
+        width:25%;
+        min-width: 220px;
+    }
+    .home-btn{
+        width: 60%;
+        margin: auto;
+    }
+    .about{
+        margin: auto;
+        width: 80%;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .about-me{
+        padding: 5%;
+        width:90%;
+    }
+    .basic-info{
+        padding: 1%;
+        width: 98%;
+    }
+    .education .edu-card{
+        flex-direction: column;
+        height:fit-content;
+        width: 92%;
+        margin: 4%;
+    }
+    .education .edu-card .edu-head{
+        height: 35%;
+        width:100%;
+    }
+    .education .edu-card .edu-data{
+        height: 65%;
+        width:92%;
+        padding: 4%;
+    }
+    .que{
+        width:60%;
+    }
+    .que b{
+        font-size: 12px;
+    }
+    .ans span{
+        font-size: 12px;
+    }
+    .ans{
+        width: 40%;
+    }
+    .contact{
+        margin:4%;
+        padding: 2% 5%;
+    }
+    .resume-btn{
+        width:30%;
+        font-size: 12px;
+    }
+    .contact-btn{
+        width:30%;
+        font-size: 12px;
+    }
+    .form-contact{
+        margin: 0%;
+    }
+    .contact .form-contact .contact-field{
+        width:90%;
+        margin:0px;
+    }
+    .contact-submit{
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width:400px){
+    .navbar{
+        width: 100vw;
+        gap:20px;
+    }
+    body{
+        width:100vw;
+    }
+    main{
+        width: 100%;
+    }
+    .home{
+        width:100% ;
+    }
+    .my-photo-div{
+        width: 60%;
+    }
+    .home-btn{
+        width: 100%;
+    }
+}
